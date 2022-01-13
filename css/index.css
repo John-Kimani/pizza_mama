@@ -31,3 +31,9 @@
     font-size: larger;
 }
 /* herosection ends */
+
+/* about section starts */
+#about-images{
+    height: 350px;
+    width: 100%;
+}
