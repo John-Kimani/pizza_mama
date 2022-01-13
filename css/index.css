@@ -21,11 +21,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
     padding: 10% 2%;
 }
 .contentone{
     color: #78E824;
+    margin-top: 8%;
 }
 .contentone p{
     font-size: larger;
