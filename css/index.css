@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* utilities */
+#pizza{
+    color: #E45721;
+}
+#mama{
+    color: #78E824;
+}
+/* nav bar */
+#navitem{
+    color: #78E824;
+}
+
+/* herosection start */
+.herosection{
+    background-image: url(/images/hero_section_pizza.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding: 10% 2%;
+}
+.contentone{
+    color: #78E824;
+}
+.contentone p{
+    font-size: larger;
+}
+/* herosection ends */
