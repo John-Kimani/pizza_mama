@@ -41,3 +41,8 @@
     font-size: larger;
 }
 /* about section ends */
+
+/* menu section starts */
+#card-images{
+    height: 15vh;
+}
