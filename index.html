@@ -55,13 +55,13 @@
         </div>
         <div class="carousel-inner herosection">
           <div class="carousel-item active">
-            <img src="images/slide-show-1.jpg" class="d-block w-100 img-thumbnail" alt="...">
+            <img src="images/slide-show-1.jpg" class="d-block w-100 img-thumbnail" alt="slideone">
           </div>
           <div class="carousel-item">
-            <img src="images/slide-show-2.jpg" class="d-block w-100 img-thumbnail" alt="...">
+            <img src="images/slide-show-2.jpg" class="d-block w-100 img-thumbnail" alt="slidetwo">
           </div>
           <div class="carousel-item">
-            <img src="images/slide-show-3.jpg" class="d-block w-100 img-thumbnail" alt="...">
+            <img src="images/slide-show-3.jpg" class="d-block w-100 img-thumbnail" alt="slidethree">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -223,6 +223,9 @@
 
                     <label for="quantity" class="form-label mt-2">Quantity</label>
                     <input type="number" name="quantity" id="">
+                    <div>
+                      <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </div>
 
                 </div>
                 <!-- confirm table right starts -->
@@ -230,7 +233,7 @@
 
                 </div>
               </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            
           </form>
       </section>
       <!-- order section ends -->
@@ -239,24 +242,43 @@
       <section class="contacts pt-4" id="contactPage">
           <div class="row">
               <!-- location -->
-              <div class="col-md-4" style="border: 2px solid red;">
-                <h4>
-                    <span class="logo" id="pizza">Pizza<span id="mama">MAMA</span></span>
-                </h4>
+              <div class="col-md-4">
+                <h2>Contact <span class="logo" id="pizza">Pizza<span id="mama">MAMA</span></span></h2>
+                <p>
+                    Here is the easiest way to reach us, Write us a <br>
+                    message and we will get back soonest;<br><br>
+                    <strong>Address:</strong> <br>
+                    Kenyatta Ave, CBD, <br> 
+                    Nairobi, Kenya
+                    <strong>Phone:</strong> <br>
+                    0700001000 <br><br>
+                    <strong>Email:</strong> <br>
+                    sales@pizzamama.com
+                </p>
 
               </div>
               <!-- contact info -->
-              <div class="col-md-4" style="border: 2px solid red;">
-                  <h4>Reach us;</h4>
-
+              <div class="col-md-4">
+                  <h4>Write to us</h4>
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Your Message:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
               </div>
               <!-- newsletter -->
-              <div class="col-md-4" style="border: 2px solid red; overflow-y: hidden;">
+              <div class="col-md-4">
                 <h4>Subscribe to<span class="logo" id="pizza">Pizza<span id="mama">MAMA</span></span>newsletter</h4>
                 <form action="" class="row">
-                    <label for="exampleFormControlInput1" class="form-label">Enter your email</label>
-                    <div class="col-auto">
-                        <input type="text" placeholder="email@pizzamama.ke">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary">Submit</button>
