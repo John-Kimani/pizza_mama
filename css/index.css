@@ -16,14 +16,15 @@
 }
 
 /* herosection start */
-.herosection{
+/* .herosection{
     background-image: url(/images/hero_section_pizza.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
     padding: 10% 2%;
-}
+} */
+
 .contentone{
     color: #78E824;
     margin-top: 8%;
