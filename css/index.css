@@ -56,6 +56,10 @@
 /* form section ends */
 
 /* footer starts */
+.socials{
+    margin-left: 3%;
+    margin-right: 3%;
+}
 /* .socials ul{
     display: inline-flex;
 }
