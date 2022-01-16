@@ -1,19 +1,31 @@
 // console.log("hello") //confirm link
-//remove cart button function start
+//remove cart button loop start
 var removeCartItemButtons = document.getElementsByClassName('btn-danger')
 console.log(removeCartItemButtons) //confirms button selects
 
 for(var i=0; i < removeCartItemButtons.length; i++){
     var button = removeCartItemButtons[i]
-    button.addEventListener('click', function(event){
-        // console.log("Clicked") //confirms event listener
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
-    })
+    button.addEventListener('click', removeCartItem)
+}
+// remove cart  button loop end
+
+var quantityInputs = document.getElementsByClassName('ngapi')
+for(var i=0; i < quantityInputs.length; i++){
+    var input = quantityInputs[i]
+    input.addEventListener('change', quantityChanged)
+}
+// functions
+// remove cart button function
+function removeCartItem(event){
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
 }
 
 //remove cart button function end
+//set input value function start
+
+//set input value function end
 
 //function to cart item price total
 
