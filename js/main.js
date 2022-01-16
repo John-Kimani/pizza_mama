@@ -21,6 +21,7 @@ function updateCartTotal(){
     var cartItemForm = document.getElementsByClassName('cart-items')[0]
     // fetch objects inside class
     var cartRows = cartItemForm.getElementsByClassName('cart-row')
+    var total = 0
     for(var i=0; i < cartRows.length; i++){
         var cartRow = cartRows[i]
         var bei = cartRow.getElementsByClassName('bei')[0]
@@ -29,10 +30,8 @@ function updateCartTotal(){
         var price = parseFloat(bei.innerText.replace('ksh.', ' ')) //declares new variable and converts it from string to interger
         // console.log(price) //confirms price picked
         var quantity = ngapi.value
-        console.log(price * quantity)
-        
-
-
+        // console.log(price * quantity) //display math function
+        total = total + (price * quantity) //new total for every cart item
     }
 
 }
