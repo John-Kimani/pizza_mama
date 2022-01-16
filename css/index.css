@@ -10,6 +10,10 @@
 #mama{
     color: #78E824;
 }
+.btn-color{
+    background-color: #78E824;
+    color: #ffff;
+}
 /* nav bar */
 #navitem{
     color: #78E824;
