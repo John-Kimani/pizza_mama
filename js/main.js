@@ -27,7 +27,11 @@ function updateCartTotal(){
         var ngapi = cartRow.getElementsByClassName('ngapi')[0]
         // console.log(bei, ngapi) //confirms fetch
         var price = parseFloat(bei.innerText.replace('ksh.', ' ')) //declares new variable and converts it from string to interger
-        console.log(price) //confirms price picked
+        // console.log(price) //confirms price picked
+        var quantity = ngapi.value
+        console.log(price * quantity)
+        
+
 
     }
 
