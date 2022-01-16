@@ -18,7 +18,12 @@ for(var i=0; i < quantityInputs.length; i++){
 }
 // set input value loop end
 // add to cart loop start
-
+var addToCartButtons = document.getElementsByClassName('add-to-cart')
+for(var i=0; i < quantityInputs.length; i++){
+    var button = addToCartButtons[i]
+    console.log(button)
+    button.addEventListener('click', addToCartClicked)
+}
 
 // add to cart loop end
 
@@ -46,7 +51,13 @@ function quantityChanged(event){
 //set input value function end
 
 // add to cart function start
+function addToCartClicked(event){
+    var button = event.target
+    var orderItem = button.parentElement.parentElement
+    var orderTitle = orderItem.getElementsByClassName('add-to-cart')
+    console.log(orderTitle)
 
+}
 // add to cart function end
 
 //function to cart item price total
