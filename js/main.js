@@ -24,7 +24,13 @@ function removeCartItem(event){
 
 //remove cart button function end
 //set input value function start
-
+function quantityChanged(event){
+    var input = event.target
+    if(isNaN(input.value) || input.value <=0){
+        input.value = 1
+    }
+    updateCartTotal()
+}
 //set input value function end
 
 //function to cart item price total
