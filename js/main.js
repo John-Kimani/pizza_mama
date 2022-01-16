@@ -51,6 +51,7 @@ function updateCartTotal(){
         // console.log(price * quantity) //display math function
         total = total + (price * quantity) //new total for every cart item
     }
+    total = Math.round(total * 100)/ 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'ksh.' + total //sets and inserts new total in html
 
 }
