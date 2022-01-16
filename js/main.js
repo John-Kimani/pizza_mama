@@ -25,7 +25,10 @@ function updateCartTotal(){
         var cartRow = cartRows[i]
         var bei = cartRow.getElementsByClassName('bei')[0]
         var ngapi = cartRow.getElementsByClassName('ngapi')[0]
-        console.log(bei, ngapi)
+        // console.log(bei, ngapi) //confirms fetch
+        var price = bei.innerText.replace('ksh.', ' ')
+        console.log(price) //confirms price picked
+
     }
 
 }
