@@ -52,9 +52,12 @@
 
 /* order section starts */
 
-/* form section starts */
+/* cart section starts */
+.cart-head{
+    outline: 1px solid rebeccapurple;
 
-/* form section ends */
+}
+/* cart section ends */
 
 /* footer starts */
 .socials{
