@@ -16,7 +16,7 @@
 }
 /* nav bar */
 #navitem{
-    color: #78E824;
+    color: black;
 }
 
 /* herosection start */
@@ -58,7 +58,9 @@
     max-width: 20%;
 }
 /* cart section ends */
-
+.contacts{
+    color: white;
+}
 /* footer starts */
 .socials{
     margin-left: 3%;

@@ -19,7 +19,7 @@ for(var i=0; i < quantityInputs.length; i++){
 // set input value loop end
 // add to cart loop start
 var addToCartButtons = document.getElementsByClassName('add-to-cart')
-for(var i=0; i < quantityInputs.length; i++){
+for(var i=0; i < addToCartButtons.length; i++){
     var button = addToCartButtons[i]
     console.log(button)
     button.addEventListener('click', addToCartClicked)
@@ -54,8 +54,10 @@ function quantityChanged(event){
 function addToCartClicked(event){
     var button = event.target
     var orderItem = button.parentElement.parentElement
-    var orderTitle = orderItem.getElementsByClassName('add-to-cart')
-    console.log(orderTitle)
+    var orderTitle = orderItem.getElementsByClassName('pizza-title.value').innerText
+    console.log(orderTitle) //displays title
+    var price = orderItem.getElementsByClassName('add-to-cart').innerText
+    // console.log(price) //displays price
 
 }
 // add to cart function end
