@@ -1,8 +1,6 @@
 # pizza MAMA 
-
-
-# SCREENSHOTS
-
+PizzaMAMA project is a website that allows users to order Pizza and also offers delivery to any one within Nairobi.
+PizzaMAMA website also allows the user to choose the variety of pizza flavours,toppings and crust and also outputs the total amount of bill.
 
 ## LIVE DEMO
 [live]()
