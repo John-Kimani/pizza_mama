@@ -54,11 +54,10 @@ function quantityChanged(event){
 function addToCartClicked(event){
     var button = event.target
     var orderItem = button.parentElement.parentElement
-    var orderTitle = orderItem.getElementsByClassName('pizza-title.value').innerText
-    console.log(orderTitle) //displays title
-    var price = orderItem.getElementsByClassName('add-to-cart').innerText
+    var orderTitle = orderItem.getElementsByClassName('pizza-title')[0].innerText
+    // console.log(orderTitle) //displays title
+    var price = orderItem.getElementsByClassName('size')[0].innerText
     // console.log(price) //displays price
-
 }
 // add to cart function end
 
@@ -84,3 +83,6 @@ function updateCartTotal(){
     document.getElementsByClassName('cart-total-price')[0].innerText = 'ksh.' + total //sets and inserts new total in html
 
 }
+
+
+

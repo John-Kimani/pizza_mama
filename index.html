@@ -106,7 +106,7 @@
           <h2 class="text-center">
               About <span class="logo" id="pizza">Pizza<span id="mama">MAMA</span></span>
           </h2>
-          <div class="row">
+          <div class="row pt-3">
             <div class="col-md-4">
                 <img src="/images/right_about_section.jpeg" class="img-thumbnail" alt="pizza-on-board" id="about-images">
             </div>
@@ -128,7 +128,7 @@
             <span class="logo" id="pizza">Pizza<span id="mama">MAMA</span></span> Menu
           </h2>
 
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
             <div class="col">
               <div class="card">
                 <img src="images/cheese_burger_pizza.jpeg" class="card-img-top img-thumbnail" alt="cheese-burger" id="card-images">
@@ -212,9 +212,9 @@
                     <label for="size" class="form-label mt-2">Pick your hunger</label>
                     <select class="form-select mt-2" aria-label="Default select example">
                         <option selected>Size matters</option>
-                        <option value="cheeseBurger">Small</option>
-                        <option value="chickenMacon">Medium</option>
-                        <option value="chickenHawaiian">Large</option>
+                        <option class="size" value="cheeseBurger">Small <span class="bei">@ksh 750</span></option>
+                        <option class="size" value="chickenMacon">Medium <span class="bei">@ksh 950</span></option>
+                        <option class="size" value="chickenHawaiian">Large <span class="bei">@ksh 1200</span></option>
                     </select>
 
                     <label for="crust" class="form-label mt-2">Select your crust</label>
@@ -315,7 +315,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form id="delivery-form">
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Your Name</label>
                         <input type="text" class="form-control" id="recipient-name" placeholder="John Doe">
@@ -340,7 +340,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-color">PURCHASE</button>
+                    <button type="submit" class="btn btn-color purchase">PURCHASE</button>
                   </div>
                 </div>
               </div>
@@ -435,5 +435,7 @@
   <!-- js links -->
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
