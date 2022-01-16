@@ -33,5 +33,6 @@ function updateCartTotal(){
         // console.log(price * quantity) //display math function
         total = total + (price * quantity) //new total for every cart item
     }
+    document.getElementsByClassName('cart-total-price')[0].innerText = total //sets and inserts new total in html
 
 }
