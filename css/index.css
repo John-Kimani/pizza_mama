@@ -57,6 +57,9 @@
     outline: 1px solid rebeccapurple;
 
 }
+.cart-quantity-input{
+    max-width: 20%;
+}
 /* cart section ends */
 
 /* footer starts */
