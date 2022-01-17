@@ -84,5 +84,16 @@ function updateCartTotal(){
 
 }
 
+// alert function
+function displayLocation(){
+    // let name = document.querySelector('#recipient-name'.value);
+    let name = document.getElementById('recipient-name').value
+    // console.log(name)
+    let location = document.querySelector('#inputAddress').value
+    // console.log(location)
+    alert('Hello ' + name + " you order will be delivered to " + location + " Thank you for shopping with us!");
+}
+let purchaseButton = document.querySelector('.purchase-button');
+    purchaseButton.addEventListener('click', displayLocation);
 
 
