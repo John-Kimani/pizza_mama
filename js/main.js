@@ -91,7 +91,10 @@ function displayLocation(){
     // console.log(name)
     let location = document.querySelector('#inputAddress').value
     // console.log(location)
-    alert('Hello ' + name + " you order will be delivered to " + location + " Thank you for shopping with us!");
+    let city = document.querySelector('#city').value
+    // console.log(city)
+    
+    alert('Hello ' + name + " you order will be delivered to " + location + " in " + city + " Thank you for shopping with us!");
 }
 let purchaseButton = document.querySelector('.purchase-button');
     purchaseButton.addEventListener('click', displayLocation);
