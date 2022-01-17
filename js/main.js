@@ -84,6 +84,8 @@ function updateCartTotal(){
 
 }
 
+
+
 // alert function
 function displayLocation(){
     // let name = document.querySelector('#recipient-name'.value);
@@ -92,9 +94,8 @@ function displayLocation(){
     let location = document.querySelector('#inputAddress').value
     // console.log(location)
     let city = document.querySelector('#city').value
-    // console.log(city)
-    
-    alert('Hello ' + name + " you order will be delivered to " + location + " in " + city + " Thank you for shopping with us!");
+    // console.log(city) 
+    alert('Hello ' + name + " you order will be delivered to " + location + " in " + city + ". Thank you for shopping with us!");
 }
 let purchaseButton = document.querySelector('.purchase-button');
     purchaseButton.addEventListener('click', displayLocation);
